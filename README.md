@@ -2,7 +2,8 @@
 #### 线程的状态</br>
     
 		1.New:新建状态。就是对象刚被new出，还有start()。
-		2.Runnable:可运行状态。调用start(),此时线程就是Runnable状态，可能正在运行也可能没有运行（取决于操作系统提供的运行时间）。
+		2.Runnable:可运行状态。调用start(),此时线程就是Runnable状态，可能正在运行也可能没有运行（取决于操作系统提供
+		的运行时间）。
 		3.Blocked:阻塞状态。
 		4.Waiting:等待状态。线程暂时不活动，并且不运行任何代码，这此时线程消耗资源最小，直到线程调度器重新激活。
 		5.Time waitiing 超时等待装填。PS:和Wating 状态的区别是它可以在指定的时间自行返回。
@@ -34,12 +35,12 @@
 		    synchronized语句中使用，但是如果使用的是ReenTrantLock实现同步时使用ReenTrantLock.newCondition()
 		    获取一个Condition类对象，然后Condition的await()，signal()以及signalAll()分别对应上面的三个方法。
 
-		yield() </br>
+		yield() 
 		yield()方法和sleep()方法类似，也不会释放“锁标志”，区别在于，它没有参数，即yield()方法只是使当前线程重新
 		回到可执行状态，所以执行yield()的线程有可能在进入到可执行状态后马上又被执行，另外yield()方法只能使同优先
 		级或者高优先级的线程得到执行机会，这也和sleep()方法不同。
 
-		join() </br>
+		join() 
 		    join()必须等被调用线程结束后才能返回。
 
 
