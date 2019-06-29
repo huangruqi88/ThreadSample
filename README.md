@@ -44,4 +44,4 @@
 		    join()必须等被调用线程结束后才能返回。
 
 
-![ZQUKpT.md.png](https://s2.ax1x.com/2019/06/29/ZQUKpT.md.png)
+![多线程](https://i.imgur.com/94ObfTA.png)
